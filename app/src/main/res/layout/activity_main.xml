@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#14213D"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:typeface="monospace"
+        android:textColor="@android:color/white"
+        android:textSize="80sp"
+        android:text="Weather" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/etCity"
+            android:background="#E5E5E5"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Enter Your City Name"
+            android:textColorHint="@android:color/black"
+            android:inputType="textPersonName"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btnGet"
+            android:layout_marginBottom="10dp"
+            android:background="#FCA311"
+            android:textColor="@android:color/black"
+            android:onClick="getWeatherDetails"
+            android:text="Get"
+            app:backgroundTint="@null"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:typeface="sans"
+                android:id="@+id/tvResult"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
